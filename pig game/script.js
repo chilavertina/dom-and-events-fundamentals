@@ -9,8 +9,8 @@ const current0El = document.getElementById('current--0');
 const current1El = document.getElementById('current--1');
 
 const diceEl = document.querySelector('.dice');
-const btnRoll = document.querySelector('.btn--new');
-const btnNew = document.querySelector('.btn--roll');
+const btnRoll = document.querySelector('.btn--roll');
+const btnNew = document.querySelector('.btn--new');
 const btnHold = document.querySelector('.btn--hold');
 
 score0El.textContent = 0;
