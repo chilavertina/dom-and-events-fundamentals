@@ -54,7 +54,7 @@ btnHold.addEventListener('click', function () {
     document.getElementById(`score--${activePlayer}`).textContent =
       scores[activePlayer];
 
-    if (scores[activePlayer] >= 100) {
+    if (scores[activePlayer] >= 10) {
       playing = false;
       diceEl.classList.add('hidden');
       document
@@ -67,4 +67,15 @@ btnHold.addEventListener('click', function () {
       switchPlayer();
     }
   }
+});
+
+//CODING CHALLENGE
+document.querySelector('.btn--new').addEventListener('click', function () {
+  document.querySelector(`#score--${activePlayer}`).textContent = 0;
+  document.querySelector(`#current--${activePlayer}`).textContent = 0;
+  document
+    .querySelector(`.player--${activePlayer}`)
+    .classList.remove('player--winner');
+  document.querySelector('.player--0').style.backgroundColor =
+    'rgba(255, 255, 255, 0.4)';
 });
